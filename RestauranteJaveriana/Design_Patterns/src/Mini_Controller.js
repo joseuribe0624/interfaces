@@ -1,4 +1,7 @@
 /*Esta funcion permite obtener el valor del select de html(onchange)*/
+
+menu = ["vegetariana","pollo y carne", "mariscos"]
+
 function getValueType (paellaType){
 
 	this.paellaType = paellaType;
@@ -19,6 +22,9 @@ function buildPaella(){
 	//console.log(base)
 	//console.log(executeSingleton())
 	console.log(getValuePrice())
+
+	var decorator = new executeDecorator(menuItems)
+	console.log("decorador=",decorator )
 }
 
 function getValueCoin(coin){
